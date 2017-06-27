@@ -5,6 +5,17 @@
 - https://github.com/explore
 - https://github.com/AntBranch/awesome-github
 - http://youtube.com/githubguides
+- https://github.com/showcases
+- [github-changelog-generator](https://github.com/skywinder/github-changelog-generator)
+- [mention-bot](https://github.com/facebook/mention-bot)
+- [octobox](https://github.com/octobox/octobox)
+- [greenkeeper](https://github.com/greenkeeperio/greenkeeper)
+- [package-json-to-readme](https://github.com/zeke/package-json-to-readme)
+- [contributors-on-github](https://github.com/hzoo/contributors-on-github)
+- [semantic-release](https://github.com/semantic-release/semantic-release)
+- [Star History：GitHub 仓库发展史透视工具](http://www.timqian.com/star-history/)
+- [git-pr：管理 Pull Request 的小工具](http://www.feweekly.com/trackers/open/06a4f3b8794c0593710324f2ac565d50)
+- [Github：开源项目参与指南](https://opensource.guide)
 
 # 教程
 - [GotGitHub](http://www.worldhello.net/gotgithub/index.html)

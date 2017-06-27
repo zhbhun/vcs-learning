@@ -151,6 +151,9 @@ TODo
 
 # 问题
 - [Oh shit, git!](http://ohshitgit.com/)
+- [使用 "5W1H" 写出高可读的 Git Commit Message](https://zhuanlan.zhihu.com/p/26791124)
+- [How do I commit case-sensitive only filename changes in Git?](https://stackoverflow.com/questions/17683458/how-do-i-commit-case-sensitive-only-filename-changes-in-git)
+- [CLI Tips #3：如何知道仓库的代码行数？](https://zhuanlan.zhihu.com/p/26684427)
 
 ## AutoCRLF
 - Window 换行符是 CR + LF，OS X 和 Linux 换行符使用 LF；
@@ -195,6 +198,7 @@ TODo
 - [nvie/gitflow · GitHub](https://github.com/nvie/gitflow)
 - [图解Git](http://my.oschina.net/xdev/blog/114383)
 - [Git Magic - 前言](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html)
+- [goops：给仓库添加最佳 gitignore 规则的命令行工具](https://github.com/captainsafia/goops)
 
 # 书籍
 - 《Pro Git》
