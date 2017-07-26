@@ -215,3 +215,7 @@ TODo
 
 # 规范
 - [Angular Git Commit Guidelines](https://github.com/angular/angular.js/blob/v1.4.8/CONTRIBUTING.md#commit)
+- [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+- [Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+- [闲谈 git merge 与 git rebase 的区别](https://segmentfault.com/a/1190000005013964)
+- [Git分支管理策略](http://www.codeceo.com/article/git-plan.html)
