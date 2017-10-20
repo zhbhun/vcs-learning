@@ -8,6 +8,7 @@
 - https://github.com/showcases
 - [github-changelog-generator](https://github.com/skywinder/github-changelog-generator)
 - [mention-bot](https://github.com/facebook/mention-bot)
+- [pull-review](https://github.com/imsky/pull-review)
 - [octobox](https://github.com/octobox/octobox)
 - [greenkeeper](https://github.com/greenkeeperio/greenkeeper)
 - [package-json-to-readme](https://github.com/zeke/package-json-to-readme)
