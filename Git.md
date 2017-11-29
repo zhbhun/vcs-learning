@@ -199,6 +199,7 @@ TODo
 - [图解Git](http://my.oschina.net/xdev/blog/114383)
 - [Git Magic - 前言](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html)
 - [goops：给仓库添加最佳 gitignore 规则的命令行工具](https://github.com/captainsafia/goops)
+- [git-recipes](https://github.com/geeeeeeeeek/git-recipes/wiki)
 
 # 书籍
 - 《Pro Git》
