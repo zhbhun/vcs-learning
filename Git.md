@@ -149,6 +149,15 @@ TODo
 
     - [Git Submodules basic explanation](https://gist.github.com/gitaarik/8735255)
 
+# 钩子
+- https://github.com/typicode/husky
+
+    - https://github.com/okonet/lint-staged
+    - https://github.com/azz/pretty-quick
+    - https://github.com/pre-commit/pre-commit
+    - https://github.com/nrwl/precise-commits
+
+- https://github.com/ghooks-org/ghooks
 
 # 问题
 - [Oh shit, git!](http://ohshitgit.com/)
