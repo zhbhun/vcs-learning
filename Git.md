@@ -184,6 +184,11 @@ TODo
 - false：允许提交包含混合换行符的文件
 - warn：提交包含混合换行符的文件时给出警告
 
+## rebase vs merge 
+- [git merge --no-ff是什么意思](https://segmentfault.com/q/1010000002477106)
+- [Git rebase学习笔记](https://www.jianshu.com/p/9cfd206635c0)
+- [Git commits历史是如何做到如此清爽的？](https://www.zhihu.com/question/61283395/answer/186122300)
+
 # 博文
 - [Learn Git Branching](http://learngitbranching.js.org/)
 - [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
