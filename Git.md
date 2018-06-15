@@ -1,5 +1,6 @@
 - https://git-scm.com/
 - https://learngitbranching.js.org/
+- https://www.git-tower.com/learn/
 
 # 工具
 - [GUI Clients](http://git-scm.com/downloads/guis)
@@ -231,6 +232,8 @@ TODo
 - 《Pragmatic Guide to Git》
 
 # 规范
+
+## 分支管理
 - [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 
     - https://github.com/nvie/gitflow/
@@ -243,3 +246,15 @@ TODo
 - [Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 - [闲谈 git merge 与 git rebase 的区别](https://segmentfault.com/a/1190000005013964)
 - [Git分支管理策略](http://www.codeceo.com/article/git-plan.html)
+- [Learn Version Control with Git](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)
+
+## 提交信息
+
+- [Angular.js Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
+- [cz-cli](https://github.com/commitizen/cz-cli)
+- [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli)
+- [更优雅的使用 Git](https://juejin.im/post/5af152c1518825673e359539)
+
+# 应用
+
+- [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
