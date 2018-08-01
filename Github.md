@@ -21,6 +21,7 @@ GitHub
 - http://www.markdowntutorial.com/
 - https://help.github.com/articles/github-flavored-markdown
 - http://www.webpagefx.com/tools/emoji-cheat-sheet/
+- [spa-github-pages](https://github.com/rafrex/spa-github-pages)
 
 ## 工具
 
