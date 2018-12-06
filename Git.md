@@ -21,6 +21,9 @@
 
     - `git init`
     - `git add readme.txt`
+
+        > `git rm --cached <filePath>` / `git reset -- <filePath>` 取消暂存
+
     - `git commit -m "wrote a readme file"`
 
 - 查看状态: `git status`
