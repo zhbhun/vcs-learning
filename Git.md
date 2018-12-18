@@ -1,15 +1,20 @@
+# Git
+
 - https://git-scm.com/
 - https://learngitbranching.js.org/
 - https://www.git-tower.com/learn/
 
-# 工具
+## 客户端
+
 - [GUI Clients](http://git-scm.com/downloads/guis)
 
-# 命令
+## 命令
+
 - [这些GIT经验够你用一年了](http://www.techug.com/post/some-git-tips.html)
 - [Git查看、删除、重命名远程分支和tag](http://zengrong.net/post/1746.htm)
 
-## 本地仓库
+### 本地仓库
+
 - 概念
 
     - 工作区: 项目目录
@@ -45,7 +50,7 @@
 - 删除文件: `git rm readme.txt` + `git commit -m "delete readme.txt"`
 - 恢复删除: `git checkout -- readme.txt`
 
-## 远程仓库
+### 远程仓库
 - SSH 配置
 
     - 创建 SSH Key: `ssh-keygen -t rsa -C "youremail@example.com"` --- 生成 id_rsa 和 id_rsa.pub
@@ -60,7 +65,7 @@
 - 克隆远程库: `git clone git@github.com:account/repository.git`
 - 查看远程仓库: `git remote`, `git remote -v`
 
-## 分支
+### 分支
 - 创建分支: `git checkout -b dev`
 
     - `git branch dev`
@@ -108,10 +113,10 @@
 
     - 推送分支: `git push origin master`, `git push origin dev` --- 选择必要的分支进行推送
 
-## 标签
+### 标签
 TODo
 
-## 子模块
+### 子模块
 - 作用
 
     - 分割代码到不同的库
@@ -154,7 +159,8 @@ TODo
 
     - [Git Submodules basic explanation](https://gist.github.com/gitaarik/8735255)
 
-# 钩子
+## 钩子
+
 - https://github.com/typicode/husky
 
     - https://github.com/okonet/lint-staged
@@ -164,13 +170,15 @@ TODo
 
 - https://github.com/ghooks-org/ghooks
 
-# 问题
+## 问题
+
 - [Oh shit, git!](http://ohshitgit.com/)
 - [使用 "5W1H" 写出高可读的 Git Commit Message](https://zhuanlan.zhihu.com/p/26791124)
 - [How do I commit case-sensitive only filename changes in Git?](https://stackoverflow.com/questions/17683458/how-do-i-commit-case-sensitive-only-filename-changes-in-git)
 - [CLI Tips #3：如何知道仓库的代码行数？](https://zhuanlan.zhihu.com/p/26684427)
 
-## AutoCRLF
+### AutoCRLF
+
 - Window 换行符是 CR + LF，OS X 和 Linux 换行符使用 LF；
 - Git 换行符转换功能 autocrlf
 
@@ -183,17 +191,20 @@ TODo
 
     - [Git自动转换换行符(autocrlf)带来的问题](http://www.luckyonecn.com/blog/git-auto-crlf-problem/)
 
-## SafeCRLF
+### SafeCRLF
+
 - true：拒绝提交包含混合换行符的文件
 - false：允许提交包含混合换行符的文件
 - warn：提交包含混合换行符的文件时给出警告
 
-## rebase vs merge 
+### rebase vs merge 
+
 - [git merge --no-ff是什么意思](https://segmentfault.com/q/1010000002477106)
 - [Git rebase学习笔记](https://www.jianshu.com/p/9cfd206635c0)
 - [Git commits历史是如何做到如此清爽的？](https://www.zhihu.com/question/61283395/answer/186122300)
 
-# 博文
+## 博文
+
 - [Learn Git Branching](http://learngitbranching.js.org/)
 - [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
     - http://www.juvenxu.com/2010/11/28/a-successful-git-branching-model/
@@ -221,7 +232,8 @@ TODo
 - [goops：给仓库添加最佳 gitignore 规则的命令行工具](https://github.com/captainsafia/goops)
 - [git-recipes](https://github.com/geeeeeeeeek/git-recipes/wiki)
 
-# 书籍
+## 书籍
+
 - 《Pro Git》
 
     - http://git-scm.com/book/en/v2
@@ -234,9 +246,9 @@ TODo
 - 《Git Internals》
 - 《Pragmatic Guide to Git》
 
-# 规范
+## 规范
 
-## 分支管理
+### 分支管理
 - [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 
     - https://github.com/nvie/gitflow/
@@ -251,13 +263,13 @@ TODo
 - [Git分支管理策略](http://www.codeceo.com/article/git-plan.html)
 - [Learn Version Control with Git](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)
 
-## 提交信息
+### 提交信息
 
 - [Angular.js Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
 - [cz-cli](https://github.com/commitizen/cz-cli)
 - [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli)
 - [更优雅的使用 Git](https://juejin.im/post/5af152c1518825673e359539)
 
-# 应用
+## 应用
 
 - [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
