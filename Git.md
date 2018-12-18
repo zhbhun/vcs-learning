@@ -51,6 +51,7 @@
 - 恢复删除: `git checkout -- readme.txt`
 
 ### 远程仓库
+
 - SSH 配置
 
     - 创建 SSH Key: `ssh-keygen -t rsa -C "youremail@example.com"` --- 生成 id_rsa 和 id_rsa.pub
@@ -66,12 +67,19 @@
 - 查看远程仓库: `git remote`, `git remote -v`
 
 ### 分支
+
 - 创建分支: `git checkout -b dev`
 
     - `git branch dev`
     - `git checkout dev`
 
 - 查看分支: `git branch`
+- 查看差异：
+
+    - `git diff branch1 branch2 --stat`
+    - `git diff branch1 branch2 文件名`
+    - `git diff branch1 branch2`
+
 - 切换分支: `git checkout master`
 - 合并分支:
 
