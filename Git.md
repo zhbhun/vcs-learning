@@ -86,6 +86,7 @@
     - `git merge dev`
     - `git merge --no-ff -m "merge with no-ff" dev`
     - `git merge dev --squash`
+    - `git merge --ff origin/develop`
 
 - 删除分支
 
