@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Git flow</title>
+  <link rel="stylesheet" href="./node_modules//gitgraph.js/build/gitgraph.css">
+  <style>
+    canvas {
+      display: block;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <a id="download" href="">download</a>
+  <canvas id="gitGraph"></canvas>
+  <script src="./node_modules/gitgraph.js/build/gitgraph.min.js"></script>
+  <script>
+    function download(){
+      var download = document.getElementById('download');
+      var image = document.getElementById('gitGraph').toDataURL('image/jpeg')
+        .replace('image/jpeg', 'image/octet-stream');
+      download.setAttribute('href', image);
+    }
+    var masterCol = 0;
+    var hotfixCol = 1
+    var simulationCol = 2;
+    var testCol = 3;
+    var releaseCol = 4;
+    var developCol = 5;
+    var featureCol = 6;
+    var template = new GitGraph.Template({
+      colors: ['#ff4d4f', '#ff7a45', '#f759ab', '#ffc53d', '#bae637', '#36cfc9', '#40a9ff'],
+      branch: {
+        lineWidth: 10,
+        showLabel: true,
+        spacingX: 50,
+        labelRotation: 0
+      },
+      commit: {
+        spacingY: -80,
+        dot: {
+          size: 14
+        },
+        message: {
+          font: 'normal 14pt Arial'
+        }
+      }
+    });
+
+    var gitgraph = new GitGraph({
+      template: template,
+      orientation: 'vertical',
+      mode: 'extended',
+      author: 'zhanghuabin'
+    });
+    var master = gitgraph.branch({
+      name: 'master',
+      column: masterCol
+    });
+    gitgraph.commit('init');
+
+    var simulation = gitgraph.branch({
+      parentBranch: master,
+      name: 'simulation',
+      column: simulationCol
+    });
+    var release = gitgraph.branch({
+      parentBranch: master,
+      name: 'release',
+      column: testCol,
+    });
+    var develop = gitgraph.branch({
+      parentBranch: master,
+      name: 'develop',
+      column: developCol
+    });
+    develop.checkout();
+
+    var feature100 = develop.branch({
+      parentBranch: develop,
+      name: 'feature/1.0.0',
+      column: featureCol
+    });
+    feature100.checkout();
+    gitgraph.commit('feat/1.0.0: a').commit('feat/1.0.0: b').commit('feat/1.0.0: c');
+    develop.checkout();
+    feature100.merge(develop);
+
+    var release100 = gitgraph.branch({
+      parentBranch: develop,
+      name: 'releases/1.0.0',
+      column: releaseCol
+    });
+    release100.checkout();
+    gitgraph.commit('release: 1.0.0-beta.1');
+    release.checkout();
+    release100.merge(release);
+    release100.checkout();
+    gitgraph.commit('fix(xxx): fix something')
+    gitgraph.commit('release: 1.0.0-beta.2');
+    release.checkout();
+    release100.merge(release);
+    simulation.checkout();
+    release100.merge(simulation);
+    release100.checkout();
+    gitgraph.commit('release: 1.0.0');
+    master.checkout();
+    release100.merge(master, { tag: '1.0.0' });
+    develop.checkout();
+    release100.merge(develop);
+
+    var hotfix = gitgraph.branch({
+      parentBranch: master,
+      name: 'hotfix/xxx',
+      column: hotfixCol
+    });
+    hotfix.checkout();
+    gitgraph.commit('fix(xxx): fix something');
+    gitgraph.commit('release: 1.0.1-beta.1');
+    hotfix.merge(simulation);
+    hotfix.checkout();
+    gitgraph.commit('release: 1.0.1');
+    hotfix.merge(master);
+    hotfix.merge(develop);
+
+    download();
+  </script>
+</body>
+</html>

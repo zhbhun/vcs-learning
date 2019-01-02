@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Git flow</title>
+  <link rel="stylesheet" href="./node_modules//gitgraph.js/build/gitgraph.css">
+  <style>
+    canvas {
+      display: block;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <a id="download" href="">download</a>
+  <canvas id="gitGraph"></canvas>
+  <script src="./node_modules/gitgraph.js/build/gitgraph.min.js"></script>
+  <script>
+    function download(){
+      var download = document.getElementById('download');
+      var image = document.getElementById('gitGraph').toDataURL('image/jpeg')
+        .replace('image/jpeg', 'image/octet-stream');
+      download.setAttribute('href', image);
+    }
+    var featureCol = 0;
+    var feature1Col = 1;
+    var feature2Col = 2;
+    var feature3Col = 3;
+    var template = new GitGraph.Template({
+      colors: ['#ff4d4f', '#ff7a45', '#f759ab', '#ffc53d'],
+      branch: {
+        lineWidth: 10,
+        showLabel: true,
+        spacingX: 50,
+        labelRotation: 0
+      },
+      commit: {
+        spacingY: -80,
+        dot: {
+          size: 14
+        },
+        message: {
+          font: 'normal 14pt Arial'
+        }
+      }
+    });
+
+    var gitgraph = new GitGraph({
+      template: template,
+      orientation: 'vertical',
+      mode: 'extended',
+      author: 'zhanghuabin'
+    });
+
+    var feature = gitgraph.branch({
+      name: 'feature/1.0.0',
+      column: featureCol
+    });
+    gitgraph.commit('init');
+
+    var feature1 = gitgraph.branch({
+      parentBranch: feature,
+      name: 'feature/1',
+      column: feature1Col
+    });
+    feature1.checkout();
+    gitgraph.commit('feat(1): add something');
+    gitgraph.commit('feat(2): change something');
+    feature1.merge(feature);
+
+    var feature2 = gitgraph.branch({
+      parentBranch: feature,
+      name: 'feature/2',
+      column: feature2Col
+    });
+    feature2.checkout();
+    gitgraph.commit('feat(1): add something');
+    gitgraph.commit('feat(2): change something');
+    feature2.merge(feature);
+
+    var feature3 = gitgraph.branch({
+      parentBranch: feature,
+      name: 'feature/3',
+      column: feature3Col
+    });
+    feature3.checkout();
+    gitgraph.commit('feat(3): add something');
+    gitgraph.commit('feat(3): change something');
+    feature3.merge(feature);
+
+    download();
+  </script>
+</body>
+</html>

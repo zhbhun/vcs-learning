@@ -8,12 +8,37 @@
 
 - [GUI Clients](http://git-scm.com/downloads/guis)
 
-## 命令
+## 教程
 
+- [git-recipes](https://github.com/geeeeeeeeek/git-recipes)
 - [这些GIT经验够你用一年了](http://www.techug.com/post/some-git-tips.html)
 - [Git查看、删除、重命名远程分支和tag](http://zengrong.net/post/1746.htm)
 
-### 本地仓库
+### 命令
+
+#### 回滚
+
+- 版本回退: `git reset --hard HEAD^`, `git reset --hard 提交ID`
+
+    - HEAD 当前版本
+    - HEAD^ 上一个版本
+    - HEAD^^ 上上一个版本
+
+- 取消修改: `git checkout -- readme.txt`, `git reset HEAD readme.txt`
+
+    - 还没添加到暂存区: 回到和版本库一致
+    - 已添加到暂存区: 回到添加到暂存区的状态
+
+- 恢复删除: `git checkout -- readme.txt`
+
+
+参考文献
+
+- [代码回滚：Reset、Checkout、Revert 的选择](https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9)
+
+#### 仓库
+
+##### 本地仓库
 
 - 概念
 
@@ -36,21 +61,9 @@
 - 添加暂存区: `git add readme.txt`
 - 条件分支: `git commit readme.txt`
 - 版本历史: `git log [--pretty=oneline]`, `git reflog`
-- 版本回退: `git reset --hard HEAD^`, `git reset --hard 提交ID`
-
-    - HEAD 当前版本
-    - HEAD^ 上一个版本
-    - HEAD^^ 上上一个版本
-
-- 取消修改: `git checkout -- readme.txt`, `git reset HEAD readme.txt`
-
-    - 还没添加到暂存区: 回到和版本库一致
-    - 已添加到暂存区: 回到添加到暂存区的状态
-
 - 删除文件: `git rm readme.txt` + `git commit -m "delete readme.txt"`
-- 恢复删除: `git checkout -- readme.txt`
 
-### 远程仓库
+##### 远程仓库
 
 - SSH 配置
 
@@ -66,7 +79,7 @@
 - 克隆远程库: `git clone git@github.com:account/repository.git`
 - 查看远程仓库: `git remote`, `git remote -v`
 
-### 分支
+#### 分支
 
 - 创建分支: `git checkout -b dev`
 
@@ -122,10 +135,12 @@
 
     - 推送分支: `git push origin master`, `git push origin dev` --- 选择必要的分支进行推送
 
-### 标签
-TODo
+#### 标签
 
-### 子模块
+TODO
+
+#### 子模块
+
 - 作用
 
     - 分割代码到不同的库
@@ -168,7 +183,7 @@ TODo
 
     - [Git Submodules basic explanation](https://gist.github.com/gitaarik/8735255)
 
-## 钩子
+### 钩子
 
 - https://github.com/typicode/husky
 
@@ -239,11 +254,10 @@ TODo
 - [图解Git](http://my.oschina.net/xdev/blog/114383)
 - [Git Magic - 前言](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html)
 - [goops：给仓库添加最佳 gitignore 规则的命令行工具](https://github.com/captainsafia/goops)
-- [git-recipes](https://github.com/geeeeeeeeek/git-recipes/wiki)
 
 ## 书籍
 
-- 《Pro Git》
+- [《Pro Git》](https://github.com/progit/progit)
 
     - http://git-scm.com/book/en/v2
     - http://git-scm.com/book/zh/v2
@@ -277,7 +291,14 @@ TODo
 - [Angular.js Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
 - [cz-cli](https://github.com/commitizen/cz-cli)
 - [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli)
-- [更优雅的使用 Git](https://juejin.im/post/5af152c1518825673e359539)
+- [更优雅的使用 Git](https://segmentfault.com/a/1190000014776954)
+
+## 工具
+
+- 流程图绘制工具
+
+    - http://beta.gitflowchart.com/
+    - http://gitgraphjs.com/
 
 ## 应用
 
