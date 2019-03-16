@@ -194,6 +194,10 @@ TODO
 
 - https://github.com/ghooks-org/ghooks
 
+### 配置
+
+- https://github.com/github/gitignore
+
 ## 问题
 
 - [Oh shit, git!](http://ohshitgit.com/)
