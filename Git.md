@@ -76,6 +76,10 @@
     - `git remote add origin git@github.com:account/repository.git`
     - `git push -u origin master`, `git push origin master`
 
+- 修改远程仓库地址
+
+    `git remote set-url origin <newurl> [<oldurl>]`
+
 - 克隆远程库: `git clone git@github.com:account/repository.git`
 - 查看远程仓库: `git remote`, `git remote -v`
 
@@ -196,7 +200,10 @@ TODO
 
 ### 配置
 
+### Ignore
+
 - https://github.com/github/gitignore
+- [使.gitignore忽略除了几个文件之外的所有内容](https://codeday.me/bug/20170317/773.html)
 
 ## 问题
 
