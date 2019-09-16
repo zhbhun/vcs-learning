@@ -12,9 +12,7 @@ GitHub
 - [Github Help](https://github.com/waylau/github-help)
 - [Github：开源项目参与指南](https://opensource.guide)
 
-## 教程
-
-### 写作
+## 写作
 
 - [Writing on GitHub](https://help.github.com/categories/writing-on-github/)
 - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
@@ -23,7 +21,16 @@ GitHub
 - http://www.webpagefx.com/tools/emoji-cheat-sheet/
 - [spa-github-pages](https://github.com/rafrex/spa-github-pages)
 
-## 工具
+## Actions
+
+- [Actions](https://github.com/features/actions)
+- [awesome-actions](https://github.com/sdras/awesome-actions)
+- [Actions Market](https://github.com/marketplace?type=actions)
+- [GitHub Actions](https://github.com/actions)
+- [Workflow syntax for GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions)
+- [GitHub Actions 入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
+- [持续集成是什么？](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)
+- [actions-toolkit](https://github.com/JasonEtco/actions-toolkit)
 
 ## Issue
 
