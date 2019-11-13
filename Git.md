@@ -232,6 +232,10 @@ TODO
 - false：允许提交包含混合换行符的文件
 - warn：提交包含混合换行符的文件时给出警告
 
+### "old mode 100755 new mode 100644"
+
+- [How do I remove files saying “old mode 100755 new mode 100644” from unstaged changes in Git?](https://stackoverflow.com/questions/1257592/how-do-i-remove-files-saying-old-mode-100755-new-mode-100644-from-unstaged-cha)
+
 ### rebase vs merge 
 
 - [git merge --no-ff是什么意思](https://segmentfault.com/q/1010000002477106)
