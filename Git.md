@@ -107,8 +107,9 @@
 
 - 删除分支
 
-    - `git branch -d dev`
-    - `git branch -D dev`
+    - 删除本地分支：`git branch -d dev`
+    - 强制删除本地分支：`git branch -D dev`
+    - 删除远程分支：`git push origin :branch_name` 
 
 - 解决冲突: ...
 - 分支管理策略: master, dev, issue-xxx, feture-xxx...
@@ -141,7 +142,10 @@
 
 #### 标签
 
-TODO
+- 删除标签
+    - `git tag -d tag_name`
+    - `git push origin :refs/tags/tag_name`
+- ...
 
 #### 子模块
 
@@ -182,7 +186,7 @@ TODO
     - 主仓库通过 `.gitmodules` 来维护包含的子模块，并且主仓库只是包含了子模块提交记录的指针（主仓库引用的是子模块哪一个版本）。
     - 在维护子模块的时候，要将子模块当做一个单独的仓库来处理。
     - 在维护主仓库的时候，要将子模块当成一个包含子模块指针的文件来处理。
-        
+    
 - 参考文献
 
     - [Git Submodules basic explanation](https://gist.github.com/gitaarik/8735255)
