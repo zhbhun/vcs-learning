@@ -14,9 +14,14 @@
 - [这些GIT经验够你用一年了](http://www.techug.com/post/some-git-tips.html)
 - [Git查看、删除、重命名远程分支和tag](http://zengrong.net/post/1746.htm)
 
-### 命令
+## 命令
 
-#### 回滚
+### 回滚
+
+- 未跟踪文件
+
+    - `git clean -fd`：强制删除所有未跟踪的文件和文件夹
+    - `git clean -fdx`：包含 gitignore 文件
 
 - 版本回退: `git reset --hard HEAD^`, `git reset --hard 提交ID`
 
@@ -36,9 +41,31 @@
 
 - [代码回滚：Reset、Checkout、Revert 的选择](https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9)
 
-#### 仓库
+### 日志
 
-##### 本地仓库
+- 可视化查看当前分支
+
+    `git log --graph`
+
+- 可视化查看所有提交、标签和分支
+
+    `git log --oneline --decorate --all --graph`
+
+- 查找日志
+
+    `git log -i --grep search_string`
+
+- 查看指定文件或目录的变更历史
+
+    `git log -p path/to/file_or_directory`
+
+- 查看指定范围的日志
+
+    `git log <hash_or_tag>..HEAD`
+
+### 仓库
+
+#### 本地仓库
 
 - 概念
 
@@ -63,7 +90,7 @@
 - 版本历史: `git log [--pretty=oneline]`, `git reflog`
 - 删除文件: `git rm readme.txt` + `git commit -m "delete readme.txt"`
 
-##### 远程仓库
+#### 远程仓库
 
 - SSH 配置
 
@@ -82,8 +109,10 @@
 
 - 克隆远程库: `git clone git@github.com:account/repository.git`
 - 查看远程仓库: `git remote`, `git remote -v`
+- 拉取远程仓库分支：`git fetch origin xxx`
+- 创建本地分支：`git checkout -b xxx(本地分支名称) origin/xxx(远程分支名称)`
 
-#### 分支
+### 分支
 
 - 创建分支: `git checkout -b dev`
 
@@ -140,14 +169,14 @@
 
     - 推送分支: `git push origin master`, `git push origin dev` --- 选择必要的分支进行推送
 
-#### 标签
+### 标签
 
 - 删除标签
     - `git tag -d tag_name`
     - `git push origin :refs/tags/tag_name`
 - ...
 
-#### 子模块
+### 子模块
 
 - 作用
 
@@ -156,6 +185,7 @@
 
 - 用法
 
+    - 克隆：`git clone --recurse-submodules <url>`
     - 初始化：克隆仓库后使用
 
         - `git submodule update --init`：更新子模块，没有初始化的会先初始化；
@@ -202,7 +232,7 @@
 
 - https://github.com/ghooks-org/ghooks
 
-### 配置
+## 配置
 
 ### Ignore
 
