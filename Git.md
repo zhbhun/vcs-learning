@@ -232,6 +232,35 @@
 
 - https://github.com/ghooks-org/ghooks
 
+### 备份
+
+- `git bundle`
+- `git archive`
+
+
+    ```shell
+    function bugit() {
+      pwd
+      cd $1
+      git clean -df && git reset && git archive --format=tar HEAD -o ./backup.tar && tar -rf ./backup.tar -C ./ .git && gzip < ./backup.tar >     backup.tar.gz && rm -f backup.tar && mv ./backup.tar.gz $2/$1.tar.gz
+      cd ..
+    }
+    
+    # butgits <target_dir> 
+    function butgits() {
+      for file in ./*
+      do
+        if test -d $file
+        then
+          if [ ! -f "$1/${file:2}.tar.gz" ]; then
+            echo ">>${file:2}"
+            bugit ${file:2} $1
+          fi
+        fi
+      done
+    }
+    ```
+
 ## 配置
 
 ### Ignore
