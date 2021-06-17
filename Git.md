@@ -309,6 +309,11 @@
 
 - [git@github.com: Permission denied (publickey)](https://blog.csdn.net/qq_32786873/article/details/80947195)
 
+### 自定义 SSH Key
+
+- [How to specify the private SSH-key to use when executing shell command on Git?](https://stackoverflow.com/questions/4565700/how-to-specify-the-private-ssh-key-to-use-when-executing-shell-command-on-git)
+- [git 指定要提交的ssh key](https://www.cnblogs.com/chenkeyu/p/10440798.html)
+
 ## 博文
 
 - [Learn Git Branching](http://learngitbranching.js.org/)
