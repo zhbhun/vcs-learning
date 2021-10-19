@@ -318,6 +318,11 @@
 
 - [How to change the author and committer name and e-mail of multiple commits in Git?](https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi)
 
+### rebase vs merge
+
+- [rebase 还是 merge？](https://v2ex.com/t/802718#reply78)
+- https://i.bmp.ovh/imgs/2021/09/13b50db1bb1ef78f.png
+
 ## 博文
 
 - [Learn Git Branching](http://learngitbranching.js.org/)
