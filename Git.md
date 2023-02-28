@@ -397,6 +397,10 @@
     - http://gitgraphjs.com/
     - [git-sim](https://github.com/initialcommit-com/git-sim) - Visually simulate Git operations in your own repos with a single terminal command.
 
+- 监测工具
+
+    - [gitwatch](https://github.com/gitwatch/gitwatch)
+
 ## 应用
 
 - [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
