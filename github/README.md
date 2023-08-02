@@ -44,6 +44,10 @@ GitHub
 - [Github Start Histoy](https://star-history.com/)
 - [metrics](https://github.com/lowlighter/metrics) - An infographics generator with 30+ plugins and 300+ options to display stats about your GitHub account and render them as SVG, Markdown, PDF or JSON!
 
+## README
+
+- [github-profile-readme-generator](https://github.com/rahuldkjain/github-profile-readme-generator) - Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.
+
 ## 客户端
 
 - Android
