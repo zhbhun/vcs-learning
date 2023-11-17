@@ -16,6 +16,10 @@ GitHub
 
 - [GitHub 多账号的 SSH 配置](https://learnku.com/articles/4411/github-multi-account-ssh-configuration)
 
+## Profile
+
+- [bubble-awesome-profile](https://bubble-awesome-profile.vercel.app/)
+
 ## 写作
 
 - [Writing on GitHub](https://help.github.com/categories/writing-on-github/)
